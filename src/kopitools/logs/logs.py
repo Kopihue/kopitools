@@ -84,5 +84,20 @@ class Log:
             paint(*self.args)
         ).show()
 
+    def info(self):
+        icon = "INFO" if Log.text else "^"
+
+        flag = paint(
+            paint("[").bold(),
+            paint(icon).bold().blue(),
+            paint("]").bold(),
+            sep=""
+        )
+
+        paint(
+            paint(flag).bold(),
+            paint(*self.args)
+        ).show()
+
 def log(*args: Any) -> Log:
     return Log(args)
