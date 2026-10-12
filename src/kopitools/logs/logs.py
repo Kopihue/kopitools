@@ -1,5 +1,6 @@
+from kopitools.paint import paint
+
 from typing import Any
-from kopilogs.paint import paint
 
 class Log:
     icons = True

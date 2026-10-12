@@ -1,3 +1,10 @@
-from kopitools.logs.logs import log
-from kopitools.logs.logs import Log
-from kopitools.paint.paint import paint
+from kopitools.logs import (
+    log, Log
+)
+from kopitools.paint import (
+    paint, Paint
+)
+from kopitools.args import (
+    Registry, Option, Args,
+    ArgError, EntryPointNotFoundError,
+)
